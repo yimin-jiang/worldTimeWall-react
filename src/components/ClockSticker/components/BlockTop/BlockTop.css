@@ -1,0 +1,14 @@
+.block_tp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: #e67f5f;
+  color: white;
+  font: 500 20px Arial, Helvetica, sans-serif;
+}
+
+.space-right {
+  margin-right: 5px;
+}

@@ -1,0 +1,37 @@
+.block_bar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 80%;
+  /* background-color: green; */
+  margin: 0 auto;
+  transform: translate(0, 80%);
+}
+
+.block_bar::before {
+  position: absolute;
+  left: 58px;
+  font: 500 25px Arial, Helvetica, sans-serif;
+  color: white;
+  content: ":";
+}
+
+.block_bar::after {
+  position: absolute;
+  right: 58px;
+  font: 500 25px Arial, Helvetica, sans-serif;
+  color: white;
+  content: ":";
+}
+
+.clock {
+  height: 50px;
+  width: 50px;
+  background-color: #e67f5f;
+  font: 500 25px Arial, Helvetica, sans-serif;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+}

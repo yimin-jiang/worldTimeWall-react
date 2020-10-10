@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block {
+            width: 250px;
+            height: 250px;
+            background-color: #FB8966;
+        }
+
+        .block_tp {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 100%;
+            background-color: #E67F5F;
+            color: white;
+            font: 500 20px Arial, Helvetica, sans-serif;
+        }
+
+        .space-right {
+            margin-right: 5px;
+        }
+
+
+        .block_bar {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+            width: 80%;
+            /* background-color: green; */
+            margin: 0 auto;
+            transform: translate(0, 80%);
+        }
+
+        .block_bar::before {
+            position: absolute;
+            left: 58px;
+            font: 500 25px Arial, Helvetica, sans-serif;
+            color: white;
+            content: ":";
+        }
+
+        .block_bar::after {
+            position: absolute;
+            right: 58px;
+            font: 500 25px Arial, Helvetica, sans-serif;
+            color: white;
+            content: ":";
+        }
+
+        .clock {
+            height: 50px;
+            width: 50px;
+            background-color: #E67F5F;
+            font: 500 25px Arial, Helvetica, sans-serif;
+            color: white;
+            line-height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="block">
+        <div class="block_tp">
+            <div class="day space-right">Sat</div>
+            <div class="month space-right">Nov</div>
+            <div class="date space-right">18</div>
+            <div class="year">2017</div>
+        </div>
+
+        <div class="block_bar">
+            <div class="clock hour">13</div>
+            <div class="clock minute">50</div>
+            <div class="clock second">05</div>
+        </div>
+    </div>
+    <script>
+        var str = 'andyandy';
+        console.log(str.replace(/a/g, 'b'));
+
+    </script>
+</body>
+
+</html>
